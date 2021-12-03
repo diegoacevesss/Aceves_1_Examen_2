@@ -39,12 +39,11 @@ typedef struct{
 
 uart_mail_box_t g_mail_box_uart_0 ={0, 0};
 void (*arreglo_seq[10])(void);
-void (*secuencia_inicio[10])(void) = {Azul_ON, Rojo_ON, Verde_ON};
 
 void Funcion_recorrer_arreglo_sec(void); //Funcion de la sacada practica
 
 void Funcion_recorrer_arreglo_sec(void){
-	if(10<contador_seq)
+	if(10<counter)
 		contador_seq = 10;
 	else{
 		if(contador_seq == cont_rec_sec)
